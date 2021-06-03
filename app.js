@@ -75,3 +75,10 @@ $("#submitEmployee").on("click", function (event) {
         alert("You must enter all fields to submit!");
     }
 });
+
+$("#reset").on("click", function (event) {
+    // prevent form from submitting
+    event.preventDefault();
+
+    employeeRef.remove();
+});
